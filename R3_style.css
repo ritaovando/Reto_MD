@@ -1,0 +1,64 @@
+* {
+    margin: 0%;
+    box-sizing:border-box;
+}
+body {
+    display: flex;
+    flex-direction: row;
+}
+.contenedor_video {
+    width: 50%;
+    height: 50%;
+}
+.contenedor_video img{
+    width: 100%;
+    height: auto;
+} 
+.box-descripcion {
+    width: 45%;
+    display: block;
+    padding: 5px;
+}
+.titulo {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#424242;
+}
+.texto{
+    color: thistle;
+    text-align: justify;
+}
+#boxVideo {
+    background-color: #0000008f;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    display: none;
+    justify-content: center;
+}
+#cerrar {
+    position: absolute;
+    display: flex;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+i {
+    color: white;
+    font-size: 20px;
+}
+#botonVideo {
+    cursor: pointer;
+    padding: 0px;
+} 
+@media (max-width: 600px){
+
+      body {
+          flex-direction: column;
+      }
+
+}
