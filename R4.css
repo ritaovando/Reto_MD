@@ -1,0 +1,58 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+table {
+    background-color:white;
+    border-spacing: 0px;
+
+}
+table tr td, th {
+    width: 150px;
+    height: auto;
+    text-align:left;
+    border: 2px solid#F3F1F1 ;
+}
+.rowColor {
+    background-color: #F8F7F7;
+}
+.PrimerFila {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.PrimerFila p {
+    display: inline-block;
+}
+.PrimerFila img {
+    display: inline-block;
+}
+.contenedor {
+    overflow-x: auto;
+}
+/*definimos los breakpint*/
+
+@media (max-width: 600px) {
+    
+
+    .tabla {
+        min-width: 900px;
+    } 
+        .tabla td:first-child {
+            position:absolute;
+            width: 150px;
+            background-color: white;
+    
+        }
+        .tabla th:first-child {
+            position: absolute;
+            background-color: white;
+            width: 150px;
+        }
+}
